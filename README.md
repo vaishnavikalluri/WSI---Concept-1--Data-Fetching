@@ -79,3 +79,23 @@ Each page in an application may require a different strategy based on its conten
 CONCEPT-2 
 The Staging Secret That Broke Production”
 You’re part of the engineering team at ShopLite, an e-commerce platform preparing for a big sale weekend. During deployment, a developer accidentally used the staging database credentials in the production environment, overwriting live product data with test entries. The rollback worked, but it caused downtime and loss of customer trust.
+
+
+CONCEPT - 3
+- Understanding Cloud Deployments: Docker → CI/CD → AWS/Azure
+
+- Docker packages my app into one container so it runs the same everywhere (local → CI/CD → cloud).
+
+- I used a simple Dockerfile: install dependencies → copy code → build Next.js → start server on port 3000.
+
+- CI/CD (GitHub Actions) automates build, test, and deployment whenever I push new code.
+
+- AWS (Amazon Web Services) and Azure (Microsoft cloud) let me run my Docker container online without managing hardware.
+
+- I used secrets in GitHub/AWS/Azure to store environment variables securely (not inside the code).
+
+- Deployment issues like “environment variable not found”, port already in use, or old container still running happen when the - pipeline is not configured properly.
+
+- Fixes: stop old containers, use versioned images, pass environment variables correctly, and ensure the CI/CD steps run in order.
+
+- With proper Docker setup and automated CI/CD, deployments become smooth, consistent, secure, and easy to maintain.
