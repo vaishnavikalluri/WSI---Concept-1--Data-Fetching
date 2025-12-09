@@ -1,3 +1,5 @@
+CONCEPT- 1 
+
 Advanced Data Fetching in Next.js App Router
 Concepts Learned:
 
@@ -71,3 +73,9 @@ Choosing a rendering strategy is about balancing speed, data freshness, and scal
 For high-traffic apps, relying on SSR everywhere is costly. ISR or static rendering can reduce server load while keeping the user experience smooth.
 
 Each page in an application may require a different strategy based on its content and usage.
+
+
+
+CONCEPT-2 
+The Staging Secret That Broke Production”
+You’re part of the engineering team at ShopLite, an e-commerce platform preparing for a big sale weekend. During deployment, a developer accidentally used the staging database credentials in the production environment, overwriting live product data with test entries. The rollback worked, but it caused downtime and loss of customer trust.
